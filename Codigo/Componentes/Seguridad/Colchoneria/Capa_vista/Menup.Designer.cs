@@ -50,9 +50,9 @@ namespace Vista_Seguridad
             this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(333, 107);
+            this.panelLogo.Size = new System.Drawing.Size(375, 134);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBox1
@@ -60,9 +60,9 @@ namespace Vista_Seguridad
             this.pictureBox1.BackColor = System.Drawing.Color.SlateGray;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(333, 107);
+            this.pictureBox1.Size = new System.Drawing.Size(375, 134);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -75,11 +75,11 @@ namespace Vista_Seguridad
             this.btlogistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btlogistica.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btlogistica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btlogistica.Location = new System.Drawing.Point(0, 107);
-            this.btlogistica.Margin = new System.Windows.Forms.Padding(4);
+            this.btlogistica.Location = new System.Drawing.Point(0, 134);
+            this.btlogistica.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btlogistica.Name = "btlogistica";
-            this.btlogistica.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btlogistica.Size = new System.Drawing.Size(333, 48);
+            this.btlogistica.Padding = new System.Windows.Forms.Padding(76, 0, 0, 0);
+            this.btlogistica.Size = new System.Drawing.Size(375, 60);
             this.btlogistica.TabIndex = 0;
             this.btlogistica.Text = "LOGISTICA";
             this.btlogistica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -95,11 +95,11 @@ namespace Vista_Seguridad
             this.btncompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncompras.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncompras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btncompras.Location = new System.Drawing.Point(0, 155);
-            this.btncompras.Margin = new System.Windows.Forms.Padding(4);
+            this.btncompras.Location = new System.Drawing.Point(0, 194);
+            this.btncompras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btncompras.Name = "btncompras";
-            this.btncompras.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btncompras.Size = new System.Drawing.Size(333, 48);
+            this.btncompras.Padding = new System.Windows.Forms.Padding(76, 0, 0, 0);
+            this.btncompras.Size = new System.Drawing.Size(375, 60);
             this.btncompras.TabIndex = 2;
             this.btncompras.Text = "COMPRAS";
             this.btncompras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -115,11 +115,11 @@ namespace Vista_Seguridad
             this.btnProduccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProduccion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnProduccion.Location = new System.Drawing.Point(0, 203);
-            this.btnProduccion.Margin = new System.Windows.Forms.Padding(4);
+            this.btnProduccion.Location = new System.Drawing.Point(0, 254);
+            this.btnProduccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnProduccion.Name = "btnProduccion";
-            this.btnProduccion.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnProduccion.Size = new System.Drawing.Size(333, 48);
+            this.btnProduccion.Padding = new System.Windows.Forms.Padding(76, 0, 0, 0);
+            this.btnProduccion.Size = new System.Drawing.Size(375, 60);
             this.btnProduccion.TabIndex = 4;
             this.btnProduccion.Text = "PRODUCCION";
             this.btnProduccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -135,13 +135,13 @@ namespace Vista_Seguridad
             this.btnnominas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnnominas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnnominas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnnominas.Location = new System.Drawing.Point(0, 251);
-            this.btnnominas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnnominas.Location = new System.Drawing.Point(0, 314);
+            this.btnnominas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnnominas.Name = "btnnominas";
-            this.btnnominas.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnnominas.Size = new System.Drawing.Size(333, 48);
+            this.btnnominas.Padding = new System.Windows.Forms.Padding(76, 0, 0, 0);
+            this.btnnominas.Size = new System.Drawing.Size(375, 60);
             this.btnnominas.TabIndex = 8;
-            this.btnnominas.Text = "NOMINAS";
+            this.btnnominas.Text = "Cuentas por Cobrar";
             this.btnnominas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnnominas.UseVisualStyleBackColor = false;
             this.btnnominas.Click += new System.EventHandler(this.btnnominas_Click);
@@ -155,11 +155,11 @@ namespace Vista_Seguridad
             this.btnBancos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBancos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBancos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnBancos.Location = new System.Drawing.Point(0, 299);
-            this.btnBancos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBancos.Location = new System.Drawing.Point(0, 374);
+            this.btnBancos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBancos.Name = "btnBancos";
-            this.btnBancos.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnBancos.Size = new System.Drawing.Size(333, 48);
+            this.btnBancos.Padding = new System.Windows.Forms.Padding(76, 0, 0, 0);
+            this.btnBancos.Size = new System.Drawing.Size(375, 60);
             this.btnBancos.TabIndex = 10;
             this.btnBancos.Text = "BANCOS";
             this.btnBancos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,11 +175,11 @@ namespace Vista_Seguridad
             this.btnContabilidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnContabilidad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContabilidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnContabilidad.Location = new System.Drawing.Point(0, 347);
-            this.btnContabilidad.Margin = new System.Windows.Forms.Padding(4);
+            this.btnContabilidad.Location = new System.Drawing.Point(0, 434);
+            this.btnContabilidad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnContabilidad.Name = "btnContabilidad";
-            this.btnContabilidad.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnContabilidad.Size = new System.Drawing.Size(333, 48);
+            this.btnContabilidad.Padding = new System.Windows.Forms.Padding(76, 0, 0, 0);
+            this.btnContabilidad.Size = new System.Drawing.Size(375, 60);
             this.btnContabilidad.TabIndex = 12;
             this.btnContabilidad.Text = "CONTABILIDAD";
             this.btnContabilidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,9 +202,9 @@ namespace Vista_Seguridad
             this.panelSideMenu.Controls.Add(this.panelLogo);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelSideMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.panelSideMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(333, 583);
+            this.panelSideMenu.Size = new System.Drawing.Size(375, 729);
             this.panelSideMenu.TabIndex = 46;
             // 
             // btnLogout
@@ -216,11 +216,11 @@ namespace Vista_Seguridad
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnLogout.Location = new System.Drawing.Point(0, 443);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogout.Location = new System.Drawing.Point(0, 554);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnLogout.Size = new System.Drawing.Size(333, 48);
+            this.btnLogout.Padding = new System.Windows.Forms.Padding(76, 0, 0, 0);
+            this.btnLogout.Size = new System.Drawing.Size(375, 60);
             this.btnLogout.TabIndex = 14;
             this.btnLogout.Text = "CERRAR SESIÓN";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -236,11 +236,11 @@ namespace Vista_Seguridad
             this.btnseguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnseguridad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnseguridad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnseguridad.Location = new System.Drawing.Point(0, 395);
-            this.btnseguridad.Margin = new System.Windows.Forms.Padding(4);
+            this.btnseguridad.Location = new System.Drawing.Point(0, 494);
+            this.btnseguridad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnseguridad.Name = "btnseguridad";
-            this.btnseguridad.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnseguridad.Size = new System.Drawing.Size(333, 48);
+            this.btnseguridad.Padding = new System.Windows.Forms.Padding(76, 0, 0, 0);
+            this.btnseguridad.Size = new System.Drawing.Size(375, 60);
             this.btnseguridad.TabIndex = 13;
             this.btnseguridad.Text = "SEGURIDAD";
             this.btnseguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -249,11 +249,12 @@ namespace Vista_Seguridad
             // 
             // Menup
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1037, 583);
+            this.ClientSize = new System.Drawing.Size(1167, 729);
             this.Controls.Add(this.panelSideMenu);
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Menup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menup";

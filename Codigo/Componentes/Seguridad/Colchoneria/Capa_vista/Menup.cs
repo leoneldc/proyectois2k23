@@ -73,8 +73,8 @@ namespace Vista_Seguridad
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btnnominas_Click(object sender, EventArgs e)
         {
-           /* CapaVistaNomina.MenuPrincipal b = new CapaVistaNomina.MenuPrincipal();
-            b.Show();*/
+            CPC_Vista.CPC_MDI formCpc = new CPC_Vista.CPC_MDI();
+            formCpc.Show();
             cn.setBtitacora("6000", "Ingreso Nominas");
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo

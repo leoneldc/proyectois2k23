@@ -44,6 +44,9 @@
     <Reference Include="ComprasVista">
       <HintPath>..\..\..\..\Modulos\Administracion\Vista\bin\Debug\ComprasVista.dll</HintPath>
     </Reference>
+    <Reference Include="CPC_Vista">
+      <HintPath>..\..\..\..\Modulos\CuentasXCobrar\CPC_Vista\bin\Debug\CPC_Vista.dll</HintPath>
+    </Reference>
     <Reference Include="eCryptography, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Eramake.eCryptography.1.1.6\lib\net45\eCryptography.dll</HintPath>
     </Reference>

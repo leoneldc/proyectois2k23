@@ -20,8 +20,8 @@ namespace CPC_Vista
         private void navegador1_Load(object sender, EventArgs e)
         {
             NavegadorVista.Navegador.idApp = "6005";
-            TextBox[] Grupotextbox = { txt_id, txt_nombre, txt_simbolo, txt_estado };
-            TextBox[] Idtextbox = { txt_id, txt_nombre, txt_simbolo, txt_estado };
+            TextBox[] Grupotextbox = { txt_id, txt_nombre, txt_simbolo, txt_cambio, txt_estado };
+            TextBox[] Idtextbox = { txt_id, txt_nombre, txt_simbolo, txt_cambio, txt_estado };
             navegador1.textbox = Grupotextbox;
             navegador1.tabla = tbl_Moneda;
             navegador1.textboxi = Idtextbox;

@@ -40,6 +40,8 @@ namespace CPC_Vista
             this.label5 = new System.Windows.Forms.Label();
             this.tbl_Moneda = new System.Windows.Forms.DataGridView();
             this.navegador1 = new NavegadorVista.Navegador();
+            this.txt_cambio = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Moneda)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +75,7 @@ namespace CPC_Vista
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 463);
+            this.label4.Location = new System.Drawing.Point(12, 516);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 20);
             this.label4.TabIndex = 4;
@@ -85,7 +87,7 @@ namespace CPC_Vista
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(238, 26);
             this.txt_id.TabIndex = 5;
-            this.txt_id.Tag = "id";
+            this.txt_id.Tag = "pk_id_moneda";
             // 
             // txt_nombre
             // 
@@ -93,7 +95,7 @@ namespace CPC_Vista
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(238, 26);
             this.txt_nombre.TabIndex = 6;
-            this.txt_nombre.Tag = "nombre";
+            this.txt_nombre.Tag = "nombre_moneda";
             // 
             // txt_simbolo
             // 
@@ -101,20 +103,21 @@ namespace CPC_Vista
             this.txt_simbolo.Name = "txt_simbolo";
             this.txt_simbolo.Size = new System.Drawing.Size(238, 26);
             this.txt_simbolo.TabIndex = 7;
-            this.txt_simbolo.Tag = "simbolo";
+            this.txt_simbolo.Tag = "simbolo_moneda";
             // 
             // txt_estado
             // 
-            this.txt_estado.Location = new System.Drawing.Point(178, 504);
+            this.txt_estado.Location = new System.Drawing.Point(178, 557);
             this.txt_estado.Name = "txt_estado";
             this.txt_estado.Size = new System.Drawing.Size(238, 26);
             this.txt_estado.TabIndex = 8;
-            this.txt_estado.Tag = "estado";
+            this.txt_estado.TabStop = false;
+            this.txt_estado.Tag = "estado_moneda";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(174, 463);
+            this.label5.Location = new System.Drawing.Point(174, 516);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(157, 20);
             this.label5.TabIndex = 9;
@@ -148,11 +151,30 @@ namespace CPC_Vista
             this.navegador1.TabIndex = 0;
             this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
+            // txt_cambio
+            // 
+            this.txt_cambio.Location = new System.Drawing.Point(178, 456);
+            this.txt_cambio.Name = "txt_cambio";
+            this.txt_cambio.Size = new System.Drawing.Size(238, 26);
+            this.txt_cambio.TabIndex = 12;
+            this.txt_cambio.Tag = "cambio_moneda";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 462);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(72, 20);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "CAMBIO";
+            // 
             // Mant_moneda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 638);
+            this.Controls.Add(this.txt_cambio);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.tbl_Moneda);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_estado);
@@ -185,5 +207,7 @@ namespace CPC_Vista
         private System.Windows.Forms.TextBox txt_estado;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView tbl_Moneda;
+        private System.Windows.Forms.TextBox txt_cambio;
+        private System.Windows.Forms.Label label6;
     }
 }
