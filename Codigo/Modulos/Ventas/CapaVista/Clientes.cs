@@ -42,7 +42,7 @@ namespace CapaVista
 
         private void navegador1_Load(object sender, EventArgs e)
         {
-            NavegadorVista.Navegador.idApp = "7003";
+            NavegadorVista.Navegador.idApp = "1000";
             TextBox[] Grupotextbox = { txt_id, txt_dpi, txt_nombre, txt_apellido, txt_fechanac, txt_nit, txt_estado, txt_direccion, txt_telefono, txt_vendedor, txt_smesanterior,txt_saldoactual,txt_cargomes,txt_abonomes,txt_cargosacum,txt_abonosacum };
             TextBox[] Idtextbox = { txt_id, txt_dpi };
             navegador1.textbox = Grupotextbox;
