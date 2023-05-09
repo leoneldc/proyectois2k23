@@ -77,5 +77,15 @@ namespace CapaVista
         {
             AbrirFormEnPanel(new Vendedores());
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new ReporteClientes());
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new ReporteClientes());
+        }
     }
 }
