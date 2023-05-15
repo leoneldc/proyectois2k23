@@ -16,7 +16,6 @@ namespace CapaControlador_Alumnos
     {
         CapaModelo_Alumnod.Sentencias sn = new CapaModelo_Alumnod.Sentencias();
 
-
         public DataTable MostrarReportes()
         {
             OdbcDataAdapter data = sn.DisplayAlumnos();

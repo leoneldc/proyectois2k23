@@ -41,6 +41,7 @@ namespace CapaVista
             navegador1.textboxi = Idtextbox;
             navegador1.actual = this;
             navegador1.cargar(dataGridView1, Grupotextbox, "tbl_vendedores");
+
         }
 
         private void button1_Click(object sender, EventArgs e)

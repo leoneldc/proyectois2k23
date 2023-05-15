@@ -31,6 +31,7 @@ namespace CapaVista
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             this.barratitulo = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.navegador1 = new NavegadorVista.Navegador();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -67,7 +68,6 @@ namespace CapaVista
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.barratitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -82,15 +82,26 @@ namespace CapaVista
             this.barratitulo.Controls.Add(this.panel1);
             this.barratitulo.Controls.Add(this.label1);
             this.barratitulo.Location = new System.Drawing.Point(16, 12);
-            this.barratitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barratitulo.Margin = new System.Windows.Forms.Padding(4);
             this.barratitulo.Name = "barratitulo";
             this.barratitulo.Size = new System.Drawing.Size(1740, 817);
             this.barratitulo.TabIndex = 3;
             // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(56, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 85);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // navegador1
             // 
             this.navegador1.Location = new System.Drawing.Point(479, 63);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(5);
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(768, 190);
             this.navegador1.TabIndex = 3;
@@ -100,7 +111,7 @@ namespace CapaVista
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(19, 527);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1696, 272);
@@ -142,7 +153,7 @@ namespace CapaVista
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(29, 262);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1696, 241);
             this.panel1.TabIndex = 1;
@@ -150,7 +161,7 @@ namespace CapaVista
             // txt_abonosacum
             // 
             this.txt_abonosacum.Location = new System.Drawing.Point(1452, 192);
-            this.txt_abonosacum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_abonosacum.Margin = new System.Windows.Forms.Padding(4);
             this.txt_abonosacum.Name = "txt_abonosacum";
             this.txt_abonosacum.Size = new System.Drawing.Size(207, 22);
             this.txt_abonosacum.TabIndex = 33;
@@ -171,7 +182,7 @@ namespace CapaVista
             // txt_cargosacum
             // 
             this.txt_cargosacum.Location = new System.Drawing.Point(1452, 140);
-            this.txt_cargosacum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_cargosacum.Margin = new System.Windows.Forms.Padding(4);
             this.txt_cargosacum.Name = "txt_cargosacum";
             this.txt_cargosacum.Size = new System.Drawing.Size(207, 22);
             this.txt_cargosacum.TabIndex = 31;
@@ -192,7 +203,7 @@ namespace CapaVista
             // txt_abonomes
             // 
             this.txt_abonomes.Location = new System.Drawing.Point(1452, 91);
-            this.txt_abonomes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_abonomes.Margin = new System.Windows.Forms.Padding(4);
             this.txt_abonomes.Name = "txt_abonomes";
             this.txt_abonomes.Size = new System.Drawing.Size(207, 22);
             this.txt_abonomes.TabIndex = 29;
@@ -213,7 +224,7 @@ namespace CapaVista
             // txt_cargomes
             // 
             this.txt_cargomes.Location = new System.Drawing.Point(1452, 39);
-            this.txt_cargomes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_cargomes.Margin = new System.Windows.Forms.Padding(4);
             this.txt_cargomes.Name = "txt_cargomes";
             this.txt_cargomes.Size = new System.Drawing.Size(207, 22);
             this.txt_cargomes.TabIndex = 27;
@@ -234,7 +245,7 @@ namespace CapaVista
             // txt_saldoactual
             // 
             this.txt_saldoactual.Location = new System.Drawing.Point(1020, 187);
-            this.txt_saldoactual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_saldoactual.Margin = new System.Windows.Forms.Padding(4);
             this.txt_saldoactual.Name = "txt_saldoactual";
             this.txt_saldoactual.Size = new System.Drawing.Size(207, 22);
             this.txt_saldoactual.TabIndex = 25;
@@ -255,7 +266,7 @@ namespace CapaVista
             // txt_smesanterior
             // 
             this.txt_smesanterior.Location = new System.Drawing.Point(1020, 135);
-            this.txt_smesanterior.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_smesanterior.Margin = new System.Windows.Forms.Padding(4);
             this.txt_smesanterior.Name = "txt_smesanterior";
             this.txt_smesanterior.Size = new System.Drawing.Size(207, 22);
             this.txt_smesanterior.TabIndex = 23;
@@ -277,7 +288,7 @@ namespace CapaVista
             // txt_direccion
             // 
             this.txt_direccion.Location = new System.Drawing.Point(571, 185);
-            this.txt_direccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_direccion.Margin = new System.Windows.Forms.Padding(4);
             this.txt_direccion.Name = "txt_direccion";
             this.txt_direccion.Size = new System.Drawing.Size(219, 22);
             this.txt_direccion.TabIndex = 21;
@@ -298,7 +309,7 @@ namespace CapaVista
             // txt_estado
             // 
             this.txt_estado.Location = new System.Drawing.Point(571, 133);
-            this.txt_estado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_estado.Margin = new System.Windows.Forms.Padding(4);
             this.txt_estado.Name = "txt_estado";
             this.txt_estado.Size = new System.Drawing.Size(219, 22);
             this.txt_estado.TabIndex = 19;
@@ -319,7 +330,7 @@ namespace CapaVista
             // txt_vendedor
             // 
             this.txt_vendedor.Location = new System.Drawing.Point(1020, 86);
-            this.txt_vendedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_vendedor.Margin = new System.Windows.Forms.Padding(4);
             this.txt_vendedor.Name = "txt_vendedor";
             this.txt_vendedor.Size = new System.Drawing.Size(207, 22);
             this.txt_vendedor.TabIndex = 17;
@@ -340,7 +351,7 @@ namespace CapaVista
             // txt_telefono
             // 
             this.txt_telefono.Location = new System.Drawing.Point(1020, 34);
-            this.txt_telefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_telefono.Margin = new System.Windows.Forms.Padding(4);
             this.txt_telefono.Name = "txt_telefono";
             this.txt_telefono.Size = new System.Drawing.Size(207, 22);
             this.txt_telefono.TabIndex = 15;
@@ -349,7 +360,7 @@ namespace CapaVista
             // txt_dpi
             // 
             this.txt_dpi.Location = new System.Drawing.Point(133, 79);
-            this.txt_dpi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dpi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dpi.Name = "txt_dpi";
             this.txt_dpi.Size = new System.Drawing.Size(211, 22);
             this.txt_dpi.TabIndex = 14;
@@ -358,7 +369,7 @@ namespace CapaVista
             // txt_apellido
             // 
             this.txt_apellido.Location = new System.Drawing.Point(131, 181);
-            this.txt_apellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_apellido.Margin = new System.Windows.Forms.Padding(4);
             this.txt_apellido.Name = "txt_apellido";
             this.txt_apellido.Size = new System.Drawing.Size(213, 22);
             this.txt_apellido.TabIndex = 13;
@@ -367,7 +378,7 @@ namespace CapaVista
             // txt_fechanac
             // 
             this.txt_fechanac.Location = new System.Drawing.Point(571, 32);
-            this.txt_fechanac.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_fechanac.Margin = new System.Windows.Forms.Padding(4);
             this.txt_fechanac.Name = "txt_fechanac";
             this.txt_fechanac.Size = new System.Drawing.Size(219, 22);
             this.txt_fechanac.TabIndex = 12;
@@ -424,7 +435,7 @@ namespace CapaVista
             // txt_nit
             // 
             this.txt_nit.Location = new System.Drawing.Point(571, 81);
-            this.txt_nit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_nit.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nit.Name = "txt_nit";
             this.txt_nit.Size = new System.Drawing.Size(220, 22);
             this.txt_nit.TabIndex = 7;
@@ -433,7 +444,7 @@ namespace CapaVista
             // txt_nombre
             // 
             this.txt_nombre.Location = new System.Drawing.Point(133, 133);
-            this.txt_nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(211, 22);
             this.txt_nombre.TabIndex = 5;
@@ -442,7 +453,7 @@ namespace CapaVista
             // txt_id
             // 
             this.txt_id.Location = new System.Drawing.Point(131, 31);
-            this.txt_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_id.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(213, 22);
             this.txt_id.TabIndex = 4;
@@ -496,24 +507,13 @@ namespace CapaVista
             this.label1.TabIndex = 0;
             this.label1.Text = "Clientes";
             // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(19, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 85);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1772, 844);
             this.Controls.Add(this.barratitulo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Clientes";
             this.Text = "Clientes";
             this.barratitulo.ResumeLayout(false);

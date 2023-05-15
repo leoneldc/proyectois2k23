@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using NavegadorControlador;
+using CapaVista;
 using Vista;
 
 namespace NavegadorVista
@@ -31,6 +32,7 @@ namespace NavegadorVista
         public TextBox[] textboxi = { };
         public DataGridView tabla;
         public static string idApp;
+        public string nombreAyuda;
 
         public void consulta()
         {
@@ -65,6 +67,7 @@ namespace NavegadorVista
             conexionControlador.evaluartags(text, dtabla, BD);
             conexionControlador.desactivar(actual);
             bloqStart(botongc);
+            nombreAyuda = BD;
             
 
         }
@@ -286,8 +289,18 @@ namespace NavegadorVista
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
-            Ayuda ayuda = new Ayuda();
-            ayuda.Show();
+            if (nombreAyuda == "tbl_clientes")
+            {
+                MenuAyudaClientes ayuda = new MenuAyudaClientes();
+                ayuda.Show();
+            }
+            if (nombreAyuda == "tbl_vendedores")
+            {
+                MenuAyudaVendedores ayuda = new MenuAyudaVendedores();
+                ayuda.Show();
+            }
+
+
 
         }
 
