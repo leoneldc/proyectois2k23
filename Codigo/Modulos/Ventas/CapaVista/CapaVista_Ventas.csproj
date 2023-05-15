@@ -64,6 +64,18 @@
     <Compile Include="Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cotizacion.Designer.cs">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleCotizacion.Designer.cs">
+      <DependentUpon>DetalleCotizacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mdi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +122,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cotizacion.resx">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleCotizacion.resx">
+      <DependentUpon>DetalleCotizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mdi.resx">
       <DependentUpon>Mdi.cs</DependentUpon>
