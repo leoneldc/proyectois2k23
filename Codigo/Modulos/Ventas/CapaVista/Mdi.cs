@@ -87,5 +87,15 @@ namespace CapaVista
         {
             AbrirFormEnPanel(new ReporteClientes());
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new Cotizacion());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new DetalleCotizacion());
+        }
     }
 }
