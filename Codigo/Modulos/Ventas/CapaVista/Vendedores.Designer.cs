@@ -29,9 +29,7 @@ namespace CapaVista
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vendedores));
             this.barratitulo = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.navegador1 = new NavegadorVista.Navegador();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -58,7 +56,6 @@ namespace CapaVista
             // barratitulo
             // 
             this.barratitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.barratitulo.Controls.Add(this.button1);
             this.barratitulo.Controls.Add(this.navegador1);
             this.barratitulo.Controls.Add(this.dataGridView1);
             this.barratitulo.Controls.Add(this.panel1);
@@ -68,22 +65,10 @@ namespace CapaVista
             this.barratitulo.Size = new System.Drawing.Size(800, 643);
             this.barratitulo.TabIndex = 2;
             // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(14, 17);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 69);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // navegador1
             // 
             this.navegador1.Location = new System.Drawing.Point(106, 44);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(576, 154);
             this.navegador1.TabIndex = 3;
@@ -154,7 +139,7 @@ namespace CapaVista
             this.txt_estado.Name = "txt_estado";
             this.txt_estado.Size = new System.Drawing.Size(183, 20);
             this.txt_estado.TabIndex = 12;
-            this.txt_estado.Tag = "estado_vendedores";
+            this.txt_estado.Tag = "Pk_id_estados";
             // 
             // label8
             // 
@@ -304,6 +289,5 @@ namespace CapaVista
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_Id;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
     }
 }

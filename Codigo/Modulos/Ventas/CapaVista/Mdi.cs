@@ -92,10 +92,5 @@ namespace CapaVista
         {
             AbrirFormEnPanel(new Cotizacion());
         }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new DetalleCotizacion());
-        }
     }
 }
