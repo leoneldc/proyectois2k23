@@ -299,7 +299,11 @@ namespace NavegadorVista
                 MenuAyudaVendedores ayuda = new MenuAyudaVendedores();
                 ayuda.Show();
             }
-
+            if (nombreAyuda == "tbl_cotizacion")
+            {
+                MenuAyudaVendedores ayuda = new MenuAyudaVendedores();
+                ayuda.Show();
+            }
 
 
         }
