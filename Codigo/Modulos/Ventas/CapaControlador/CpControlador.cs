@@ -7,14 +7,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
-using CapaModelo_Alumnod;
-
 
 namespace CapaControlador_Alumnos
 {
     public class CpControlador
     {
-        CapaModelo_Alumnod.Sentencias sn = new CapaModelo_Alumnod.Sentencias();
+        CapaModelo_Ventas.Sentencias sn = new CapaModelo_Ventas.Sentencias();
+        CapaModelo_Ventas.Cpconexion conexion = new CapaModelo_Ventas.Cpconexion();
 
         public DataTable MostrarReportes()
         {
@@ -74,6 +73,77 @@ namespace CapaControlador_Alumnos
                     sql = "UPDATE INTO tbl_vendedores SET " + sql + " WHERE id='" + textBoxs[0].Text + "';";
                     sn.ejecutarSentecias(sql);
                     break;
+            }
+        }
+
+        public void Guardar(Dictionary<string, List<string>> valoresPorTagTabla, Dictionary<string, List<string>> valoresPorTagColumnas)
+        {
+            HashSet<string> tables = new HashSet<string>(valoresPorTagTabla.Keys.Union(valoresPorTagColumnas.Keys));
+
+            foreach (string tabla in tables)
+            {
+                List<string> columnas = valoresPorTagTabla[tabla];
+                List<string> valores = valoresPorTagColumnas[tabla];
+
+                // Generate INSERT statement
+                string insert = $"INSERT INTO {tabla} ({string.Join(",", columnas)}) VALUES ({string.Join(",", valores)});";
+
+                try
+                {
+                    OdbcCommand cmd = new OdbcCommand(insert, conexion.Conexion());
+                    Console.WriteLine(insert);
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message.ToString());
+                }
+            }
+
+        }
+        public void Actualizar(Dictionary<string, List<string>> valoresPorTagTabla, Dictionary<string, List<string>> valoresPorTagColumnas, Dictionary<string, List<string>> condiciones)
+        {
+            HashSet<string> tables = new HashSet<string>(valoresPorTagTabla.Keys.Union(valoresPorTagColumnas.Keys));
+            foreach (string tabla in tables)
+            {
+                List<string> columnas = valoresPorTagTabla[tabla];
+                List<string> valores = valoresPorTagColumnas[tabla];
+                string condicion = string.Join(" AND ", condiciones[tabla].Select((v, i) => $"{v}={valoresPorTagColumnas[tabla][i]}"));
+
+                List<string> updateValues = columnas.Zip(valores, (col, val) => $"{col}={val}").ToList();
+                string update = $"UPDATE {tabla} SET {string.Join(",", updateValues)} WHERE {condicion};";
+                try
+                {
+                    OdbcCommand consulta = new OdbcCommand(update, conexion.Conexion());
+                    Console.WriteLine(update);
+                    consulta.ExecuteNonQuery();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Error en CapaModeloReporteria --> Sentencias" + e);
+                }
+            }
+
+        }
+        public void Eliminar(Dictionary<string, List<string>> valoresPorTagTabla, Dictionary<string, List<string>> valoresPorTagColumnas, Dictionary<string, List<string>> condiciones)
+        {
+            HashSet<string> tables = new HashSet<string>(valoresPorTagTabla.Keys.Union(valoresPorTagColumnas.Keys));
+            foreach (string tabla in tables)
+            {
+                List<string> columnas = valoresPorTagTabla[tabla];
+                List<string> valores = valoresPorTagColumnas[tabla];
+                string condicion = string.Join(" AND ", condiciones[tabla].Select((v, i) => $"{v}={valoresPorTagColumnas[tabla][i]}"));
+                string delete = $"DELETE FROM {tabla} WHERE {condicion};";
+                try
+                {
+                    OdbcCommand cmd = new OdbcCommand(delete, conexion.Conexion());
+                    Console.WriteLine(delete);
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message.ToString() + " \nNo se pudo guardar el registro en la tabla ");
+                }
             }
         }
     }

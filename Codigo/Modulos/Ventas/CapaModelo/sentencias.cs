@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaModelo_Alumnod
+namespace CapaModelo_Ventas
 {
     public class Sentencias
     {
-        conexion con = new conexion();
+        Cpconexion con = new Cpconexion();
 
         public OdbcDataAdapter DisplayAlumnos()
         {
