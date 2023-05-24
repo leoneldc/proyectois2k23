@@ -22,7 +22,7 @@ namespace Vista_Seguridad
         {
             InitializeComponent();
 
-            Button[] apps = { btnseguridad, btnVentas, btncompras, btnCxC, btnCxP};
+            Button[] apps = { btnseguridad, btnVentas, btncompras, btnCxC, btnCxP, btnInventario};
             cn.deshabilitarApps(apps);
 
             cn.getAccesoApp(1000, apps[0]);
@@ -30,6 +30,7 @@ namespace Vista_Seguridad
             cn.getAccesoApp(3000, apps[2]);
             cn.getAccesoApp(4000, apps[3]);
             cn.getAccesoApp(5000, apps[4]);
+            cn.getAccesoApp(6000, apps[5]);
 
 
 
@@ -43,7 +44,7 @@ namespace Vista_Seguridad
             //this.Close();
         }
 
-        public void btlogistica_Click(object sender, EventArgs e)
+        public void btnVentas_Click(object sender, EventArgs e)
         {
             CapaVista.Mdi ventas = new CapaVista.Mdi();
             ventas.Show();
@@ -74,11 +75,18 @@ namespace Vista_Seguridad
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btnnominas_Click(object sender, EventArgs e)
         {
-           /*CxPVista.MDICuentasPorPagar b = new CxPVista.MDICuentasPorPagar();
+            /*CxPVista.MDICuentasPorPagar b = new CxPVista.MDICuentasPorPagar();
             b.Show();
             cn.setBtitacora("5000", "Ingreso CxP");*/
         }
+
+        private void btnInventario_Click(object sender, EventArgs e)
+        {
+            /*CxPVista.MDICuentasPorPagar b = new CxPVista.MDICuentasPorPagar();
+            b.Show();
+            cn.setBtitacora("6000", "Ingreso Inventario");*/
+        }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
-       
+
     }
 }
