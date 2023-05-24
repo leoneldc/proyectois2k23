@@ -72,19 +72,19 @@ namespace CapaVista
             // 
             // txt_dpi
             // 
-            this.txt_dpi.Location = new System.Drawing.Point(183, 339);
+            this.txt_dpi.Location = new System.Drawing.Point(260, 339);
             this.txt_dpi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dpi.Name = "txt_dpi";
-            this.txt_dpi.Size = new System.Drawing.Size(211, 22);
+            this.txt_dpi.Size = new System.Drawing.Size(134, 22);
             this.txt_dpi.TabIndex = 22;
             this.txt_dpi.Tag = "Dpi_vendedores";
             // 
             // txt_apellido
             // 
-            this.txt_apellido.Location = new System.Drawing.Point(181, 441);
+            this.txt_apellido.Location = new System.Drawing.Point(260, 441);
             this.txt_apellido.Margin = new System.Windows.Forms.Padding(4);
             this.txt_apellido.Name = "txt_apellido";
-            this.txt_apellido.Size = new System.Drawing.Size(213, 22);
+            this.txt_apellido.Size = new System.Drawing.Size(134, 22);
             this.txt_apellido.TabIndex = 21;
             this.txt_apellido.Tag = "Apellidos_vendedores";
             // 
@@ -114,19 +114,19 @@ namespace CapaVista
             // 
             // txt_nombre
             // 
-            this.txt_nombre.Location = new System.Drawing.Point(183, 393);
+            this.txt_nombre.Location = new System.Drawing.Point(260, 393);
             this.txt_nombre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(211, 22);
+            this.txt_nombre.Size = new System.Drawing.Size(134, 22);
             this.txt_nombre.TabIndex = 18;
             this.txt_nombre.Tag = "Nombres_vendedores";
             // 
             // txt_id
             // 
-            this.txt_id.Location = new System.Drawing.Point(181, 291);
+            this.txt_id.Location = new System.Drawing.Point(260, 291);
             this.txt_id.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(213, 22);
+            this.txt_id.Size = new System.Drawing.Size(134, 22);
             this.txt_id.TabIndex = 17;
             this.txt_id.Tag = "Pk_idVendedores";
             // 
@@ -192,28 +192,28 @@ namespace CapaVista
             // 
             // txt_estado
             // 
-            this.txt_estado.Location = new System.Drawing.Point(613, 289);
+            this.txt_estado.Location = new System.Drawing.Point(699, 289);
             this.txt_estado.Margin = new System.Windows.Forms.Padding(4);
             this.txt_estado.Name = "txt_estado";
-            this.txt_estado.Size = new System.Drawing.Size(213, 22);
+            this.txt_estado.Size = new System.Drawing.Size(127, 22);
             this.txt_estado.TabIndex = 26;
             this.txt_estado.Tag = "Pk_id_estados";
             // 
             // txt_nit
             // 
-            this.txt_nit.Location = new System.Drawing.Point(613, 340);
+            this.txt_nit.Location = new System.Drawing.Point(699, 340);
             this.txt_nit.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nit.Name = "txt_nit";
-            this.txt_nit.Size = new System.Drawing.Size(213, 22);
+            this.txt_nit.Size = new System.Drawing.Size(127, 22);
             this.txt_nit.TabIndex = 27;
             this.txt_nit.Tag = "nit_vendedores";
             // 
             // txt_edad
             // 
-            this.txt_edad.Location = new System.Drawing.Point(613, 393);
+            this.txt_edad.Location = new System.Drawing.Point(699, 393);
             this.txt_edad.Margin = new System.Windows.Forms.Padding(4);
             this.txt_edad.Name = "txt_edad";
-            this.txt_edad.Size = new System.Drawing.Size(213, 22);
+            this.txt_edad.Size = new System.Drawing.Size(127, 22);
             this.txt_edad.TabIndex = 28;
             this.txt_edad.Tag = "edad_vendedores";
             // 

@@ -62,12 +62,13 @@ namespace CapaVista
             this.txt_id = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_total_detalle = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.txt_almacen_detalle = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.btn_modificar = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.txt_codigo_producto = new System.Windows.Forms.TextBox();
-            this.btn_modificar = new System.Windows.Forms.Button();
             this.txt_Precio = new System.Windows.Forms.TextBox();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
@@ -80,7 +81,6 @@ namespace CapaVista
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.txt_total_detalle = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -161,91 +161,91 @@ namespace CapaVista
             // 
             // txt_numero
             // 
-            this.txt_numero.Location = new System.Drawing.Point(445, 273);
+            this.txt_numero.Location = new System.Drawing.Point(514, 273);
             this.txt_numero.Margin = new System.Windows.Forms.Padding(4);
             this.txt_numero.Name = "txt_numero";
-            this.txt_numero.Size = new System.Drawing.Size(203, 22);
+            this.txt_numero.Size = new System.Drawing.Size(134, 22);
             this.txt_numero.TabIndex = 49;
             this.txt_numero.Tag = "tbl_venta,NumeroFel_venta";
             // 
             // txt_serie
             // 
-            this.txt_serie.Location = new System.Drawing.Point(445, 242);
+            this.txt_serie.Location = new System.Drawing.Point(514, 242);
             this.txt_serie.Margin = new System.Windows.Forms.Padding(4);
             this.txt_serie.Name = "txt_serie";
-            this.txt_serie.Size = new System.Drawing.Size(203, 22);
+            this.txt_serie.Size = new System.Drawing.Size(134, 22);
             this.txt_serie.TabIndex = 48;
             this.txt_serie.Tag = "tbl_venta,serieFel_venta";
             // 
             // txt_uuid
             // 
-            this.txt_uuid.Location = new System.Drawing.Point(445, 208);
+            this.txt_uuid.Location = new System.Drawing.Point(514, 208);
             this.txt_uuid.Margin = new System.Windows.Forms.Padding(4);
             this.txt_uuid.Name = "txt_uuid";
-            this.txt_uuid.Size = new System.Drawing.Size(203, 22);
+            this.txt_uuid.Size = new System.Drawing.Size(134, 22);
             this.txt_uuid.TabIndex = 47;
             this.txt_uuid.Tag = "tbl_venta,UUidFel_venta";
             // 
             // txt_tipo_cambio
             // 
-            this.txt_tipo_cambio.Location = new System.Drawing.Point(445, 140);
+            this.txt_tipo_cambio.Location = new System.Drawing.Point(514, 140);
             this.txt_tipo_cambio.Margin = new System.Windows.Forms.Padding(4);
             this.txt_tipo_cambio.Name = "txt_tipo_cambio";
-            this.txt_tipo_cambio.Size = new System.Drawing.Size(203, 22);
+            this.txt_tipo_cambio.Size = new System.Drawing.Size(134, 22);
             this.txt_tipo_cambio.TabIndex = 46;
             this.txt_tipo_cambio.Tag = "tbl_venta,tipodecambio_venta";
             // 
             // txt_clientes
             // 
-            this.txt_clientes.Location = new System.Drawing.Point(122, 192);
+            this.txt_clientes.Location = new System.Drawing.Point(164, 192);
             this.txt_clientes.Margin = new System.Windows.Forms.Padding(4);
             this.txt_clientes.Name = "txt_clientes";
-            this.txt_clientes.Size = new System.Drawing.Size(150, 22);
+            this.txt_clientes.Size = new System.Drawing.Size(108, 22);
             this.txt_clientes.TabIndex = 45;
             this.txt_clientes.Tag = "tbl_venta,Pk_idClientes";
             // 
             // txt_moneda
             // 
-            this.txt_moneda.Location = new System.Drawing.Point(122, 230);
+            this.txt_moneda.Location = new System.Drawing.Point(160, 230);
             this.txt_moneda.Margin = new System.Windows.Forms.Padding(4);
             this.txt_moneda.Name = "txt_moneda";
-            this.txt_moneda.Size = new System.Drawing.Size(150, 22);
+            this.txt_moneda.Size = new System.Drawing.Size(112, 22);
             this.txt_moneda.TabIndex = 44;
             this.txt_moneda.Tag = "tbl_venta,moneda_venta";
             // 
             // txt_fecha_vencimiento
             // 
-            this.txt_fecha_vencimiento.Location = new System.Drawing.Point(445, 107);
+            this.txt_fecha_vencimiento.Location = new System.Drawing.Point(514, 107);
             this.txt_fecha_vencimiento.Margin = new System.Windows.Forms.Padding(4);
             this.txt_fecha_vencimiento.Name = "txt_fecha_vencimiento";
-            this.txt_fecha_vencimiento.Size = new System.Drawing.Size(203, 22);
+            this.txt_fecha_vencimiento.Size = new System.Drawing.Size(134, 22);
             this.txt_fecha_vencimiento.TabIndex = 43;
             this.txt_fecha_vencimiento.Tag = "tbl_venta,fecha_venci_venta";
             // 
             // txt_estado_encabezado
             // 
-            this.txt_estado_encabezado.Location = new System.Drawing.Point(122, 271);
+            this.txt_estado_encabezado.Location = new System.Drawing.Point(160, 271);
             this.txt_estado_encabezado.Margin = new System.Windows.Forms.Padding(4);
             this.txt_estado_encabezado.Name = "txt_estado_encabezado";
-            this.txt_estado_encabezado.Size = new System.Drawing.Size(150, 22);
+            this.txt_estado_encabezado.Size = new System.Drawing.Size(112, 22);
             this.txt_estado_encabezado.TabIndex = 42;
             this.txt_estado_encabezado.Tag = "tbl_venta,Estado_fac_venta";
             // 
             // txt_total_encabezado
             // 
-            this.txt_total_encabezado.Location = new System.Drawing.Point(122, 155);
+            this.txt_total_encabezado.Location = new System.Drawing.Point(164, 155);
             this.txt_total_encabezado.Margin = new System.Windows.Forms.Padding(4);
             this.txt_total_encabezado.Name = "txt_total_encabezado";
-            this.txt_total_encabezado.Size = new System.Drawing.Size(150, 22);
+            this.txt_total_encabezado.Size = new System.Drawing.Size(108, 22);
             this.txt_total_encabezado.TabIndex = 41;
             this.txt_total_encabezado.Tag = "tbl_venta,Total_venta";
             // 
             // txt_IVA
             // 
-            this.txt_IVA.Location = new System.Drawing.Point(122, 115);
+            this.txt_IVA.Location = new System.Drawing.Point(164, 115);
             this.txt_IVA.Margin = new System.Windows.Forms.Padding(4);
             this.txt_IVA.Name = "txt_IVA";
-            this.txt_IVA.Size = new System.Drawing.Size(150, 22);
+            this.txt_IVA.Size = new System.Drawing.Size(108, 22);
             this.txt_IVA.TabIndex = 40;
             this.txt_IVA.Tag = "tbl_venta,IVA_venta";
             // 
@@ -347,10 +347,10 @@ namespace CapaVista
             // 
             // txt_fecha
             // 
-            this.txt_fecha.Location = new System.Drawing.Point(445, 71);
+            this.txt_fecha.Location = new System.Drawing.Point(514, 71);
             this.txt_fecha.Margin = new System.Windows.Forms.Padding(4);
             this.txt_fecha.Name = "txt_fecha";
-            this.txt_fecha.Size = new System.Drawing.Size(203, 22);
+            this.txt_fecha.Size = new System.Drawing.Size(134, 22);
             this.txt_fecha.TabIndex = 29;
             this.txt_fecha.Tag = "tbl_venta,fecha_venta";
             // 
@@ -380,10 +380,10 @@ namespace CapaVista
             // 
             // txt_almacen_encabezado
             // 
-            this.txt_almacen_encabezado.Location = new System.Drawing.Point(445, 33);
+            this.txt_almacen_encabezado.Location = new System.Drawing.Point(514, 33);
             this.txt_almacen_encabezado.Margin = new System.Windows.Forms.Padding(4);
             this.txt_almacen_encabezado.Name = "txt_almacen_encabezado";
-            this.txt_almacen_encabezado.Size = new System.Drawing.Size(203, 22);
+            this.txt_almacen_encabezado.Size = new System.Drawing.Size(134, 22);
             this.txt_almacen_encabezado.TabIndex = 30;
             this.txt_almacen_encabezado.Tag = "tbl_venta,Almacen";
             // 
@@ -425,19 +425,19 @@ namespace CapaVista
             // 
             // txt_descuento
             // 
-            this.txt_descuento.Location = new System.Drawing.Point(122, 73);
+            this.txt_descuento.Location = new System.Drawing.Point(160, 73);
             this.txt_descuento.Margin = new System.Windows.Forms.Padding(4);
             this.txt_descuento.Name = "txt_descuento";
-            this.txt_descuento.Size = new System.Drawing.Size(150, 22);
+            this.txt_descuento.Size = new System.Drawing.Size(112, 22);
             this.txt_descuento.TabIndex = 26;
             this.txt_descuento.Tag = "tbl_venta,Descuento_venta";
             // 
             // txt_id
             // 
-            this.txt_id.Location = new System.Drawing.Point(69, 33);
+            this.txt_id.Location = new System.Drawing.Point(160, 33);
             this.txt_id.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(203, 22);
+            this.txt_id.Size = new System.Drawing.Size(112, 22);
             this.txt_id.TabIndex = 25;
             this.txt_id.Tag = "tbl_venta,Pk_idVenta,primary";
             // 
@@ -484,6 +484,15 @@ namespace CapaVista
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Detalle venta";
             // 
+            // txt_total_detalle
+            // 
+            this.txt_total_detalle.Location = new System.Drawing.Point(300, 239);
+            this.txt_total_detalle.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_total_detalle.Name = "txt_total_detalle";
+            this.txt_total_detalle.Size = new System.Drawing.Size(129, 22);
+            this.txt_total_detalle.TabIndex = 36;
+            this.txt_total_detalle.Tag = "tbl_detalle_venta,Total_detalleventa";
+            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -498,10 +507,10 @@ namespace CapaVista
             // 
             // txt_almacen_detalle
             // 
-            this.txt_almacen_detalle.Location = new System.Drawing.Point(189, 33);
+            this.txt_almacen_detalle.Location = new System.Drawing.Point(300, 33);
             this.txt_almacen_detalle.Margin = new System.Windows.Forms.Padding(4);
             this.txt_almacen_detalle.Name = "txt_almacen_detalle";
-            this.txt_almacen_detalle.Size = new System.Drawing.Size(240, 22);
+            this.txt_almacen_detalle.Size = new System.Drawing.Size(129, 22);
             this.txt_almacen_detalle.TabIndex = 34;
             this.txt_almacen_detalle.Tag = "tbl_detalle_venta,Almacen,primary";
             // 
@@ -518,6 +527,17 @@ namespace CapaVista
             this.label16.Tag = "Pk_idVendedores";
             this.label16.Text = "Almacen";
             // 
+            // btn_modificar
+            // 
+            this.btn_modificar.ForeColor = System.Drawing.Color.Black;
+            this.btn_modificar.Location = new System.Drawing.Point(165, 311);
+            this.btn_modificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(129, 26);
+            this.btn_modificar.TabIndex = 27;
+            this.btn_modificar.Text = "Modificar";
+            this.btn_modificar.UseVisualStyleBackColor = true;
+            // 
             // btn_eliminar
             // 
             this.btn_eliminar.ForeColor = System.Drawing.Color.Black;
@@ -531,30 +551,19 @@ namespace CapaVista
             // 
             // txt_codigo_producto
             // 
-            this.txt_codigo_producto.Location = new System.Drawing.Point(189, 138);
+            this.txt_codigo_producto.Location = new System.Drawing.Point(300, 138);
             this.txt_codigo_producto.Margin = new System.Windows.Forms.Padding(4);
             this.txt_codigo_producto.Name = "txt_codigo_producto";
-            this.txt_codigo_producto.Size = new System.Drawing.Size(240, 22);
+            this.txt_codigo_producto.Size = new System.Drawing.Size(129, 22);
             this.txt_codigo_producto.TabIndex = 32;
             this.txt_codigo_producto.Tag = "tbl_detalle_venta,codigo_producto,primary";
             // 
-            // btn_modificar
-            // 
-            this.btn_modificar.ForeColor = System.Drawing.Color.Black;
-            this.btn_modificar.Location = new System.Drawing.Point(165, 311);
-            this.btn_modificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_modificar.Name = "btn_modificar";
-            this.btn_modificar.Size = new System.Drawing.Size(129, 26);
-            this.btn_modificar.TabIndex = 27;
-            this.btn_modificar.Text = "Modificar";
-            this.btn_modificar.UseVisualStyleBackColor = true;
-            // 
             // txt_Precio
             // 
-            this.txt_Precio.Location = new System.Drawing.Point(189, 176);
+            this.txt_Precio.Location = new System.Drawing.Point(300, 176);
             this.txt_Precio.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Precio.Name = "txt_Precio";
-            this.txt_Precio.Size = new System.Drawing.Size(240, 22);
+            this.txt_Precio.Size = new System.Drawing.Size(129, 22);
             this.txt_Precio.TabIndex = 31;
             this.txt_Precio.Tag = "tbl_detalle_venta,Cantidad_detalleventa";
             // 
@@ -596,37 +605,37 @@ namespace CapaVista
             // 
             // txt_precio_unitario
             // 
-            this.txt_precio_unitario.Location = new System.Drawing.Point(189, 210);
+            this.txt_precio_unitario.Location = new System.Drawing.Point(300, 210);
             this.txt_precio_unitario.Margin = new System.Windows.Forms.Padding(4);
             this.txt_precio_unitario.Name = "txt_precio_unitario";
-            this.txt_precio_unitario.Size = new System.Drawing.Size(240, 22);
+            this.txt_precio_unitario.Size = new System.Drawing.Size(129, 22);
             this.txt_precio_unitario.TabIndex = 28;
             this.txt_precio_unitario.Tag = "tbl_detalle_venta,Precio_uni_detalleventa";
             // 
             // txt_orden_detalle_venta
             // 
-            this.txt_orden_detalle_venta.Location = new System.Drawing.Point(189, 70);
+            this.txt_orden_detalle_venta.Location = new System.Drawing.Point(300, 70);
             this.txt_orden_detalle_venta.Margin = new System.Windows.Forms.Padding(4);
             this.txt_orden_detalle_venta.Name = "txt_orden_detalle_venta";
-            this.txt_orden_detalle_venta.Size = new System.Drawing.Size(240, 22);
+            this.txt_orden_detalle_venta.Size = new System.Drawing.Size(129, 22);
             this.txt_orden_detalle_venta.TabIndex = 27;
             this.txt_orden_detalle_venta.Tag = "tbl_detalle_venta,PK_orden_detalleventa,primary";
             // 
             // txt_Estado
             // 
-            this.txt_Estado.Location = new System.Drawing.Point(189, 269);
+            this.txt_Estado.Location = new System.Drawing.Point(300, 269);
             this.txt_Estado.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Estado.Name = "txt_Estado";
-            this.txt_Estado.Size = new System.Drawing.Size(240, 22);
+            this.txt_Estado.Size = new System.Drawing.Size(129, 22);
             this.txt_Estado.TabIndex = 26;
             this.txt_Estado.Tag = "tbl_detalle_venta,Estado_detalleventa";
             // 
             // txt_id_venta
             // 
-            this.txt_id_venta.Location = new System.Drawing.Point(189, 106);
+            this.txt_id_venta.Location = new System.Drawing.Point(300, 106);
             this.txt_id_venta.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id_venta.Name = "txt_id_venta";
-            this.txt_id_venta.Size = new System.Drawing.Size(240, 22);
+            this.txt_id_venta.Size = new System.Drawing.Size(129, 22);
             this.txt_id_venta.TabIndex = 25;
             this.txt_id_venta.Tag = "tbl_detalle_venta,Pk_idVenta,primary";
             // 
@@ -678,15 +687,6 @@ namespace CapaVista
             this.label22.TabIndex = 21;
             this.label22.Text = "Id Venta";
             // 
-            // txt_total_detalle
-            // 
-            this.txt_total_detalle.Location = new System.Drawing.Point(189, 240);
-            this.txt_total_detalle.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_total_detalle.Name = "txt_total_detalle";
-            this.txt_total_detalle.Size = new System.Drawing.Size(240, 22);
-            this.txt_total_detalle.TabIndex = 36;
-            this.txt_total_detalle.Tag = "tbl_detalle_venta,Total_detalleventa";
-            // 
             // Venta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -698,7 +698,7 @@ namespace CapaVista
             this.Controls.Add(this.navegador1);
             this.Controls.Add(this.label1);
             this.Name = "Venta";
-            this.Text = "Venta";
+            this.Text = "z";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
