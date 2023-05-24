@@ -291,21 +291,12 @@ namespace NavegadorVista
         {
             if (nombreAyuda == "tbl_clientes")
             {
-                MenuAyudaClientes ayuda = new MenuAyudaClientes();
-                ayuda.Show();
+                Help.ShowHelp(this, "C:/Users/Home/Desktop/Repositorio E/proyectois2k23/Codigo/Componentes/Navegador/Vista/bin/Debug/infoAyuda/AyudaCliente.chm", "cliente.html");
             }
             if (nombreAyuda == "tbl_vendedores")
             {
-                MenuAyudaVendedores ayuda = new MenuAyudaVendedores();
-                ayuda.Show();
+                Help.ShowHelp(this, "C:/Users/Home/Desktop/Repositorio E/proyectois2k23/Codigo/Componentes/Navegador/Vista/bin/Debug/infoAyuda/AyudaCliente.chm", "vendedores.html");
             }
-            if (nombreAyuda == "tbl_cotizacion")
-            {
-                MenuAyudaVendedores ayuda = new MenuAyudaVendedores();
-                ayuda.Show();
-            }
-
-
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
