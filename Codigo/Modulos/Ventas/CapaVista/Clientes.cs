@@ -16,29 +16,9 @@ namespace CapaVista
         {
             InitializeComponent();
         }
-        CapaControlador_Alumnos.CpControlador controlador = new CapaControlador_Alumnos.CpControlador();
+        
 
-        void displayDatos()
-        {
-            DataTable data = controlador.MostrarReportes();
-            dataGridView1.DataSource = data;
-            dataGridView1.Columns[0].HeaderText = "Id";
-            dataGridView1.Columns[1].HeaderText = "DPI";
-            dataGridView1.Columns[1].HeaderText = "Nombre";
-            dataGridView1.Columns[1].HeaderText = "Apellidos";
-            dataGridView1.Columns[1].HeaderText = "Fecha nacimiento";
-            dataGridView1.Columns[5].HeaderText = "NIT";
-            dataGridView1.Columns[1].HeaderText = "Estado";
-            dataGridView1.Columns[2].HeaderText = "Direccion";
-            dataGridView1.Columns[3].HeaderText = "Telefono";           
-            dataGridView1.Columns[5].HeaderText = "Vendedor";
-            dataGridView1.Columns[3].HeaderText = "Saldo mes anterior";
-            dataGridView1.Columns[5].HeaderText = "Saldo actual";
-            dataGridView1.Columns[3].HeaderText = "Cargo del mes";
-            dataGridView1.Columns[5].HeaderText = "Abonos del mes";
-            dataGridView1.Columns[3].HeaderText = "Cargos acumulados";
-            dataGridView1.Columns[5].HeaderText = "Abonos acumulados";
-        }
+        
 
         private void navegador1_Load(object sender, EventArgs e)
         {

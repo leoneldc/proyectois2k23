@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaVista_Ventas", "CapaVis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModelo_Ventas", "CapaModelo\CapaModelo_Ventas.csproj", "{A5148A0A-3E21-4AC7-A7E7-AE2F7FFBA8CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaControlador_Ventas", "CapaControlador\CapaControlador_Ventas.csproj", "{C7715E5D-A7F2-4A9A-A928-20DB06042199}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ventas_CapaControlador", "Ventas_CapaControlador\Ventas_CapaControlador.csproj", "{DE1970BD-F9E3-4B32-ADB5-B6EEE0A05DE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{A5148A0A-3E21-4AC7-A7E7-AE2F7FFBA8CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5148A0A-3E21-4AC7-A7E7-AE2F7FFBA8CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5148A0A-3E21-4AC7-A7E7-AE2F7FFBA8CB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7715E5D-A7F2-4A9A-A928-20DB06042199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7715E5D-A7F2-4A9A-A928-20DB06042199}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7715E5D-A7F2-4A9A-A928-20DB06042199}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7715E5D-A7F2-4A9A-A928-20DB06042199}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE1970BD-F9E3-4B32-ADB5-B6EEE0A05DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE1970BD-F9E3-4B32-ADB5-B6EEE0A05DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE1970BD-F9E3-4B32-ADB5-B6EEE0A05DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE1970BD-F9E3-4B32-ADB5-B6EEE0A05DE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

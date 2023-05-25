@@ -26,31 +26,7 @@ namespace CapaModelo_Ventas
             }
             return dataTable;
         }
-        public void Guardar(Dictionary<string, List<string>> valoresPorTagTabla, Dictionary<string, List<string>> valoresPorTagColumnas)
-        {
-            HashSet<string> tables = new HashSet<string>(valoresPorTagTabla.Keys.Union(valoresPorTagColumnas.Keys));
-
-            foreach (string tabla in tables)
-            {
-                List<string> columnas = valoresPorTagTabla[tabla];
-                List<string> valores = valoresPorTagColumnas[tabla];
-
-                // Generate INSERT statement
-                string insert = $"INSERT INTO {tabla} ({string.Join(",", columnas)}) VALUES ({string.Join(",", valores)});";
-
-                try
-                {
-                    OdbcCommand cmd = new OdbcCommand(insert, con.Conexion());
-                    Console.WriteLine(insert);
-                    cmd.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message.ToString());
-                }
-            }
-
-        }
+        
         public void ejecutarSentecias(string sql)
         {
             Console.WriteLine(sql);
