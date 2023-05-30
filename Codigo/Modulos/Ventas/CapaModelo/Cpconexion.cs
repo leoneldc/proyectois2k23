@@ -12,7 +12,7 @@ namespace CapaModelo_Ventas
         public OdbcConnection Conexion()
         {
             
-            OdbcConnection conn = new OdbcConnection("Dsn=ModuloVentas");
+            OdbcConnection conn = new OdbcConnection("Dsn=sig");
 
             try
             {

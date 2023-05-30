@@ -102,5 +102,10 @@ namespace CapaVista
         {
             AbrirFormEnPanel(new Devolucion());
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new Pedido());
+        }
     }
 }

@@ -291,11 +291,11 @@ namespace NavegadorVista
         {
             if (nombreAyuda == "tbl_clientes")
             {
-                Help.ShowHelp(this, "C:/Users/Home/Desktop/Repositorio E/proyectois2k23/Codigo/Componentes/Navegador/Vista/bin/Debug/infoAyuda/AyudaCliente.chm", "cliente.html");
+                Help.ShowHelp(this, "C:/Users/ester/OneDrive/Escritorio/Universidad/Noveno Semestre/Software/proyectois2k23Codigo/Componentes/Navegador/Vista/bin/Debug/infoAyuda/AyudaCliente.chm", "cliente.html");
             }
             if (nombreAyuda == "tbl_vendedores")
             {
-                Help.ShowHelp(this, "C:/Users/Home/Desktop/Repositorio E/proyectois2k23/Codigo/Componentes/Navegador/Vista/bin/Debug/infoAyuda/AyudaCliente.chm", "vendedores.html");
+                Help.ShowHelp(this, "C:/Users/ester/OneDrive/Escritorio/Universidad/Noveno Semestre/Software/proyectois2k23Codigo/Componentes/Navegador/Vista/bin/Debug/infoAyuda/AyudaCliente.chm", "vendedores.html");
             }
         }
 
