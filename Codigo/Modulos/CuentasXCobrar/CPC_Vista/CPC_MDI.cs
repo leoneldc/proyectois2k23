@@ -77,5 +77,11 @@ namespace CPC_Vista
             venta.MdiParent = this;
             venta.Show();
         }
+
+        private void reporteDeCierreDeCuentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CPC_Controlador.Controlador controlador = new CPC_Controlador.Controlador();
+            controlador.displayReporte("4203");
+        }
     }
 }
