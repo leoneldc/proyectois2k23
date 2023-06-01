@@ -261,46 +261,50 @@ namespace CPC_Vista
         private void btn_balance_Click(object sender, EventArgs e)
         {
 
-            double d1, d2;
-            d1 = Convert.ToDouble(cbx_cargo.Text);
-            d2 = Convert.ToDouble(cbx_abono.Text);
-
-            if (d1 > 0 && d2 > 0)
+            DialogResult result = MessageBox.Show("¿Desea realizar el valance de " + txt_nombre.Text + "?", "Los cambios seran permanentes Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
             {
+                double d1, d2;
+                d1 = Convert.ToDouble(cbx_cargo.Text);
+                d2 = Convert.ToDouble(cbx_abono.Text);
 
-                txt_cargosacumulados.Text = cbx_cargosacumulados.Text;
-                txt_cargosdelmes.Text = cbx_cargosdelmes.Text;
-                txt_abonosacumulados.Text = cbx_abonosacumulados.Text;
-                txt_abonodelmes.Text = cbx_abonodelmes.Text;
-                txt_nit.Text = cbx_nit.Text;
-                txt_dpi.Text = cbx_dpi.Text;
-                txt_telefono.Text = cbx_telefono.Text;
-                txt_direccion.Text = cbx_direccion.Text;
-                txt_anterior.Text = cbx_anterior.Text;
-                txt_cargo.Text = cbx_cargo.Text;
-                txt_abono.Text = cbx_abono.Text;
+                if (d1 > 0 && d2 > 0)
+                {
 
-                double cargomes, abonomes, cargoacumulado, abonoacumulado, resta, suma1, suma2;
+                    txt_cargosacumulados.Text = cbx_cargosacumulados.Text;
+                    txt_cargosdelmes.Text = cbx_cargosdelmes.Text;
+                    txt_abonosacumulados.Text = cbx_abonosacumulados.Text;
+                    txt_abonodelmes.Text = cbx_abonodelmes.Text;
+                    txt_nit.Text = cbx_nit.Text;
+                    txt_dpi.Text = cbx_dpi.Text;
+                    txt_telefono.Text = cbx_telefono.Text;
+                    txt_direccion.Text = cbx_direccion.Text;
+                    txt_anterior.Text = cbx_anterior.Text;
+                    txt_cargo.Text = cbx_cargo.Text;
+                    txt_abono.Text = cbx_abono.Text;
+
+                    double cargomes, abonomes, cargoacumulado, abonoacumulado, resta, suma1, suma2;
 
 
-                cargomes = Convert.ToDouble(cbx_cargo.Text);
-                abonomes = Convert.ToDouble(cbx_abono.Text);
-                cargoacumulado = Convert.ToDouble(cbx_cargosacumulados.Text);
-                abonoacumulado = Convert.ToDouble(cbx_abonosacumulados.Text);
+                    cargomes = Convert.ToDouble(cbx_cargo.Text);
+                    abonomes = Convert.ToDouble(cbx_abono.Text);
+                    cargoacumulado = Convert.ToDouble(cbx_cargosacumulados.Text);
+                    abonoacumulado = Convert.ToDouble(cbx_abonosacumulados.Text);
 
-                suma1 = cargomes + cargoacumulado;
-                suma2 = abonomes + abonoacumulado;
-                resta = abonomes - cargomes;
+                    suma1 = cargomes + cargoacumulado;
+                    suma2 = abonomes + abonoacumulado;
+                    resta = abonomes - cargomes;
 
-                txt_saldocargosacumulados.Text = Convert.ToString(suma1);
-                txt_saldoabonosacumulados.Text = Convert.ToString(suma2);
-                txt_final.Text = "-" + Convert.ToString(resta);
-                txt_saldomesanterior.Text = "-" + Convert.ToString(resta);
+                    txt_saldocargosacumulados.Text = Convert.ToString(suma1);
+                    txt_saldoabonosacumulados.Text = Convert.ToString(suma2);
+                    txt_final.Text = "-" + Convert.ToString(resta);
+                    txt_saldomesanterior.Text = "-" + Convert.ToString(resta);
 
-                string saldo = "0";
+                    string saldo = "0";
 
-                controlador.Modificarsaldosclientes(Convert.ToString(resta), saldo, Convert.ToString(suma1), Convert.ToString(suma2), cbx_id.Text);
+                    controlador.Modificarsaldosclientes(Convert.ToString(resta), saldo, Convert.ToString(suma1), Convert.ToString(suma2), cbx_id.Text);
 
+                }
             }
             else
             {
@@ -318,6 +322,7 @@ namespace CPC_Vista
                 txt_saldocargosacumulados.Text = txt_cargosacumulados.Text;
                 txt_saldoabonosacumulados.Text = txt_abonosacumulados.Text;
                 txt_final.Text = txt_anterior.Text;
+                txt_saldomesanterior.Text = txt_anterior.Text;
             }
                        
 
@@ -328,28 +333,14 @@ namespace CPC_Vista
             limpiartxt();
         }
 
-        private void cbx_cargosacumulados_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //txt_cargosacumulados.Text = cbx_cargosacumulados.Text;
-        }
-
-        private void cbx_cargosdelmes_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //txt_cargosdelmes.Text = cbx_cargosdelmes.Text;
-        }
-
-        private void cbx_abonosacumulados_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //txt_abonosacumulados.Text = cbx_abonosacumulados.Text;
-        }
-
-        private void cbx_abonodelmes_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //txt_abonodelmes.Text = cbx_abonodelmes.Text;
-        }
+        private void cbx_cargosacumulados_SelectedIndexChanged(object sender, EventArgs e){}
+        private void cbx_cargosdelmes_SelectedIndexChanged(object sender, EventArgs e){}
+        private void cbx_abonosacumulados_SelectedIndexChanged(object sender, EventArgs e){}
+        private void cbx_abonodelmes_SelectedIndexChanged(object sender, EventArgs e){}
 
         private void cbx_id_SelectedIndexChanged(object sender, EventArgs e)
         {
+            txt_id.Text = cbx_id.Text;
             llenarcbxnombre();
             llenarcbxnit();
             llenarcbxdpi();

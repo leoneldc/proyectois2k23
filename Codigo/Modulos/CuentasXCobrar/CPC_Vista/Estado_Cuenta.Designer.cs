@@ -84,6 +84,7 @@ namespace CPC_Vista
             this.btn_balance = new System.Windows.Forms.Button();
             this.cbx_nombre = new System.Windows.Forms.ComboBox();
             this.cbx_id = new System.Windows.Forms.ComboBox();
+            this.txt_id = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -611,6 +612,13 @@ namespace CPC_Vista
             this.cbx_id.TabIndex = 12;
             this.cbx_id.SelectedIndexChanged += new System.EventHandler(this.cbx_id_SelectedIndexChanged);
             // 
+            // txt_id
+            // 
+            this.txt_id.Location = new System.Drawing.Point(82, 8);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(115, 20);
+            this.txt_id.TabIndex = 13;
+            // 
             // Estado_Cuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -625,10 +633,11 @@ namespace CPC_Vista
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.MaximizeBox = false;
+            this.Controls.Add(this.txt_id);
             this.Name = "Estado_Cuenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cierre Cunta";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -695,5 +704,6 @@ namespace CPC_Vista
         private System.Windows.Forms.TextBox txt_saldocargosacumulados;
         private System.Windows.Forms.TextBox txt_saldomesanterior;
         private System.Windows.Forms.TextBox txt_saldoabonosacumulados;
+        private System.Windows.Forms.TextBox txt_id;
     }
 }
