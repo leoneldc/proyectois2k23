@@ -15,17 +15,16 @@ using NavegadorModelo;
 
 namespace NavegadorControlador
 {
- 
+
     public class csControlador
     {
         Sentencias sentencia = new Sentencias();
-        
+
         Seguridad_Controlador.Controlador cnseg = new Seguridad_Controlador.Controlador();
 
         int next, mov;
 
-        
-       
+
         public void llenartablaa(string ntabla, DataGridView tabla)//Funcion para llenar tabla
         {
             try

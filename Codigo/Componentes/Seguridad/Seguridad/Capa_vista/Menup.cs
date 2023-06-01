@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad_Controlador;
+
 //Comentado por George Mayén 25/02/2023
 namespace Vista_Seguridad
 {
@@ -44,8 +45,8 @@ namespace Vista_Seguridad
 
         public void btnVentas_Click(object sender, EventArgs e)
         {
-            /*VistaLogistica.Menu b = new VistaLogistica.Menu();
-              b.Show();
+            /*CapaVista.Mdi ventas = new CapaVista.Mdi();
+            ventas.Show();
             cn.setBtitacora("2000", "Ingreso Ventas");*/
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
@@ -59,9 +60,9 @@ namespace Vista_Seguridad
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btncompras_Click(object sender, EventArgs e)
         {
-            /*ComprasVista.central_Compra b = new ComprasVista.central_Compra();
-            b.Show();*/
-            cn.setBtitacora("3000", "Ingreso Compras");
+            /*CapaVistaCompras.menu b = new CapaVistaCompras.menu();
+            b.Show();
+            cn.setBtitacora("3000", "Ingreso Compras");*/
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btnProduccion_Click(object sender, EventArgs e)
@@ -73,14 +74,14 @@ namespace Vista_Seguridad
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btnnominas_Click(object sender, EventArgs e)
         {
-            /*CxPVista.MDICuentasPorPagar b = new CxPVista.MDICuentasPorPagar();
+           /*CxPVista.MDICuentasPorPagar b = new CxPVista.MDICuentasPorPagar();
             b.Show();
             cn.setBtitacora("5000", "Ingreso CxP");*/
         }
 
         private void btnInventario_Click(object sender, EventArgs e)
         {
-            /*CxPVista.MDICuentasPorPagar b = new CxPVista.MDICuentasPorPagar();
+            /*CapaVistaInventario.menu_inventario b = new CapaVistaInventario.menu_inventario();
             b.Show();
             cn.setBtitacora("6000", "Ingreso Inventario");*/
         }
