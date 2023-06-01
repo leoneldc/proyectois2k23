@@ -88,10 +88,11 @@ namespace CapaVista
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(768, 190);
             this.navegador1.TabIndex = 8;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // txt_total_detalle
             // 
-            this.txt_total_detalle.Location = new System.Drawing.Point(908, 608);
+            this.txt_total_detalle.Location = new System.Drawing.Point(1025, 610);
             this.txt_total_detalle.Margin = new System.Windows.Forms.Padding(4);
             this.txt_total_detalle.Name = "txt_total_detalle";
             this.txt_total_detalle.Size = new System.Drawing.Size(118, 22);
@@ -101,7 +102,7 @@ namespace CapaVista
             // 
             // txt_precio_detalle
             // 
-            this.txt_precio_detalle.Location = new System.Drawing.Point(782, 639);
+            this.txt_precio_detalle.Location = new System.Drawing.Point(899, 641);
             this.txt_precio_detalle.Margin = new System.Windows.Forms.Padding(4);
             this.txt_precio_detalle.Name = "txt_precio_detalle";
             this.txt_precio_detalle.Size = new System.Drawing.Size(118, 22);
@@ -111,7 +112,7 @@ namespace CapaVista
             // 
             // txt_cantidad_detalle
             // 
-            this.txt_cantidad_detalle.Location = new System.Drawing.Point(909, 639);
+            this.txt_cantidad_detalle.Location = new System.Drawing.Point(1026, 641);
             this.txt_cantidad_detalle.Margin = new System.Windows.Forms.Padding(4);
             this.txt_cantidad_detalle.Name = "txt_cantidad_detalle";
             this.txt_cantidad_detalle.Size = new System.Drawing.Size(118, 22);
@@ -131,7 +132,7 @@ namespace CapaVista
             // 
             // txt_cantidad_producto
             // 
-            this.txt_cantidad_producto.Location = new System.Drawing.Point(909, 674);
+            this.txt_cantidad_producto.Location = new System.Drawing.Point(1026, 676);
             this.txt_cantidad_producto.Margin = new System.Windows.Forms.Padding(4);
             this.txt_cantidad_producto.Name = "txt_cantidad_producto";
             this.txt_cantidad_producto.Size = new System.Drawing.Size(117, 22);
@@ -142,7 +143,7 @@ namespace CapaVista
             // textBox2
             // 
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(858, 510);
+            this.textBox2.Location = new System.Drawing.Point(975, 512);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(118, 22);
@@ -164,7 +165,7 @@ namespace CapaVista
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(726, 510);
+            this.textBox1.Location = new System.Drawing.Point(843, 512);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(118, 22);
@@ -174,7 +175,7 @@ namespace CapaVista
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(322, 672);
+            this.button1.Location = new System.Drawing.Point(321, 727);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 26);
@@ -198,7 +199,7 @@ namespace CapaVista
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(391, 467);
+            this.label2.Location = new System.Drawing.Point(408, 471);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 20);
@@ -215,7 +216,7 @@ namespace CapaVista
             // 
             // txt_fecha
             // 
-            this.txt_fecha.Location = new System.Drawing.Point(726, 540);
+            this.txt_fecha.Location = new System.Drawing.Point(843, 542);
             this.txt_fecha.Margin = new System.Windows.Forms.Padding(4);
             this.txt_fecha.Name = "txt_fecha";
             this.txt_fecha.Size = new System.Drawing.Size(121, 22);
@@ -248,7 +249,7 @@ namespace CapaVista
             // 
             // txt_producto
             // 
-            this.txt_producto.Location = new System.Drawing.Point(855, 570);
+            this.txt_producto.Location = new System.Drawing.Point(972, 572);
             this.txt_producto.Margin = new System.Windows.Forms.Padding(4);
             this.txt_producto.Name = "txt_producto";
             this.txt_producto.Size = new System.Drawing.Size(121, 22);
@@ -267,7 +268,7 @@ namespace CapaVista
             // txt_total
             // 
             this.txt_total.Enabled = false;
-            this.txt_total.Location = new System.Drawing.Point(611, 672);
+            this.txt_total.Location = new System.Drawing.Point(726, 725);
             this.txt_total.Margin = new System.Windows.Forms.Padding(4);
             this.txt_total.Name = "txt_total";
             this.txt_total.Size = new System.Drawing.Size(99, 22);
@@ -289,7 +290,7 @@ namespace CapaVista
             // 
             // txt_clientes
             // 
-            this.txt_clientes.Location = new System.Drawing.Point(726, 570);
+            this.txt_clientes.Location = new System.Drawing.Point(843, 572);
             this.txt_clientes.Margin = new System.Windows.Forms.Padding(4);
             this.txt_clientes.Name = "txt_clientes";
             this.txt_clientes.Size = new System.Drawing.Size(121, 22);
@@ -299,7 +300,7 @@ namespace CapaVista
             // 
             // txt_id_detalle_cotizacion
             // 
-            this.txt_id_detalle_cotizacion.Location = new System.Drawing.Point(783, 674);
+            this.txt_id_detalle_cotizacion.Location = new System.Drawing.Point(900, 676);
             this.txt_id_detalle_cotizacion.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id_detalle_cotizacion.Name = "txt_id_detalle_cotizacion";
             this.txt_id_detalle_cotizacion.Size = new System.Drawing.Size(117, 22);
@@ -312,7 +313,7 @@ namespace CapaVista
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(703, 287);
+            this.label3.Location = new System.Drawing.Point(656, 289);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 20);
@@ -333,7 +334,7 @@ namespace CapaVista
             // 
             // txt_estado
             // 
-            this.txt_estado.Location = new System.Drawing.Point(859, 540);
+            this.txt_estado.Location = new System.Drawing.Point(976, 542);
             this.txt_estado.Margin = new System.Windows.Forms.Padding(4);
             this.txt_estado.Name = "txt_estado";
             this.txt_estado.Size = new System.Drawing.Size(117, 22);
@@ -346,7 +347,7 @@ namespace CapaVista
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(28, 348);
+            this.label11.Location = new System.Drawing.Point(63, 344);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(112, 20);
@@ -367,7 +368,7 @@ namespace CapaVista
             // 
             // txt_almacen_encabezado
             // 
-            this.txt_almacen_encabezado.Location = new System.Drawing.Point(776, 608);
+            this.txt_almacen_encabezado.Location = new System.Drawing.Point(893, 610);
             this.txt_almacen_encabezado.Margin = new System.Windows.Forms.Padding(4);
             this.txt_almacen_encabezado.Name = "txt_almacen_encabezado";
             this.txt_almacen_encabezado.Size = new System.Drawing.Size(121, 22);
@@ -380,7 +381,7 @@ namespace CapaVista
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(63, 397);
+            this.label12.Location = new System.Drawing.Point(98, 397);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(77, 20);
@@ -411,7 +412,7 @@ namespace CapaVista
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(61, 467);
+            this.label22.Location = new System.Drawing.Point(96, 467);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(79, 20);
@@ -423,7 +424,7 @@ namespace CapaVista
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(541, 674);
+            this.label21.Location = new System.Drawing.Point(656, 727);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(49, 20);
@@ -432,7 +433,7 @@ namespace CapaVista
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(104, 672);
+            this.button4.Location = new System.Drawing.Point(103, 727);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(212, 26);
@@ -452,7 +453,7 @@ namespace CapaVista
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(606, 143);
+            this.dataGridView1.Size = new System.Drawing.Size(719, 193);
             this.dataGridView1.TabIndex = 83;
             this.dataGridView1.Tag = "";
             // 

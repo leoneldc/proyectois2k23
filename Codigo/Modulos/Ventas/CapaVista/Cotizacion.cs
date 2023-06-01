@@ -26,16 +26,68 @@ namespace CapaVista
             dataGridView1.Columns[1].Name = "Cantidad"; // Nombre de la segunda columna
             dataGridView1.Columns[2].Name = "Precio Unitario"; // Nombre de la tercera columna
             dataGridView1.Columns[3].Name = "Subtotal"; // Nombre de la cuarta columna
-            
+            string numeroId = "SELECT Pk_idCotizacion FROM `ModuloVentas`.`tbl_cotizacion` ORDER BY Pk_idCotizacion DESC LIMIT 1;";
+            string numeroIdDetalle = "SELECT Pk_detallecotizacion FROM `ModuloVentas`.`tbl_detalle_cotizacion` ORDER BY Pk_detallecotizacion DESC LIMIT 1;";
+
+            string comboProductos = "select nombre_producto from `ModuloVentas`.`tbl_producto`";
+            string comboAlmacen = "select nombre_almacen from `ModuloVentas`.`tbl_almacen`";
+            string comboCliente = "select Dpi_clientes from `ModuloVentas`.`tbl_clientes`";
+            string comboEstado = "select descripcion_estado_cotizacion from `ModuloVentas`.`tbl_estado_cotizacion`";
             try
             {
+                OdbcCommand cmdId = new OdbcCommand(numeroId, conexion.Conexion());
+                OdbcDataReader readerId = cmdId.ExecuteReader();
 
-                txt_id.Text = controlador.llenarTextBoxID();
-                txt_id_detalle_cotizacion.Text = controlador.llenarTextBoxIdDetalle();
-                comboBoxProducto.Items.Add(controlador.llenarComboProductos());
-                comboBoxAlmacen.Items.Add(controlador.llenarComboAlmacen());
-                comboBoxCliente.Items.Add(controlador.llenarComboCliente());
-                comboBox4.Items.Add(controlador.llenarComboEstado());
+                while (readerId.Read())
+                {
+                    int idActual = int.Parse(readerId.GetString(0));
+                    idActual = idActual + 1;
+                    txt_id.Text = idActual.ToString();
+                }
+
+                OdbcCommand cmdIdDetalle = new OdbcCommand(numeroIdDetalle, conexion.Conexion());
+                OdbcDataReader readerIdDetalle = cmdIdDetalle.ExecuteReader();
+
+                while (readerIdDetalle.Read())
+                {
+                    int idActualDetalle = int.Parse(readerIdDetalle.GetString(0));
+                    idActualDetalle = idActualDetalle + 1;
+                    txt_id_detalle_cotizacion.Text = idActualDetalle.ToString();
+                }
+
+                OdbcCommand cmd = new OdbcCommand(comboAlmacen, conexion.Conexion());
+                OdbcDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    comboBoxAlmacen.Items.Add(reader.GetString(0));
+                }
+
+
+                OdbcCommand productos = new OdbcCommand(comboProductos, conexion.Conexion());
+                OdbcDataReader readerProductos = productos.ExecuteReader();
+
+                while (readerProductos.Read())
+                {
+                    comboBoxProducto.Items.Add(readerProductos.GetString(0));
+                }
+
+
+                OdbcCommand cliente = new OdbcCommand(comboCliente, conexion.Conexion());
+                OdbcDataReader readerCliente = cliente.ExecuteReader();
+
+                while (readerCliente.Read())
+                {
+                    comboBoxCliente.Items.Add(readerCliente.GetString(0));
+                }
+                OdbcCommand estado = new OdbcCommand(comboEstado, conexion.Conexion());
+                OdbcDataReader readerEstado = estado.ExecuteReader();
+
+                while (readerEstado.Read())
+                {
+                    comboBox4.Items.Add(readerEstado.GetString(0));
+                }
+
             }
             catch (Exception ex)
             {
@@ -213,6 +265,11 @@ namespace CapaVista
             int idActual = int.Parse(txt_id.Text);
             idActual = idActual + 1;
             txt_id.Text = idActual.ToString();
+        }
+
+        private void navegador1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
