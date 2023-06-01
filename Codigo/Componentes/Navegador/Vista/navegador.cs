@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using NavegadorControlador;
-using CapaVista;
 using Vista;
 
 namespace NavegadorVista
@@ -289,14 +288,7 @@ namespace NavegadorVista
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
-            if (nombreAyuda == "tbl_clientes")
-            {
-                Help.ShowHelp(this, "C:/Users/ester/OneDrive/Escritorio/Universidad/Noveno Semestre/Software/proyectois2k23Codigo/Componentes/Navegador/Vista/bin/Debug/infoAyuda/AyudaCliente.chm", "cliente.html");
-            }
-            if (nombreAyuda == "tbl_vendedores")
-            {
-                Help.ShowHelp(this, "C:/Users/ester/OneDrive/Escritorio/Universidad/Noveno Semestre/Software/proyectois2k23Codigo/Componentes/Navegador/Vista/bin/Debug/infoAyuda/AyudaCliente.chm", "vendedores.html");
-            }
+            
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)

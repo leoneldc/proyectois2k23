@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 //Comentado por Luis Torres 26/02/2023
 namespace Modelo_Seguridad
 {
