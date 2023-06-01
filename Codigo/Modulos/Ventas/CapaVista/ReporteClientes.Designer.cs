@@ -31,6 +31,7 @@ namespace CapaVista
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.ReporteCliente1 = new CapaVista.ReporteCliente();
+            this.CrystalReport11 = new CapaVista.CrystalReport1();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -38,19 +39,22 @@ namespace CapaVista
             this.crystalReportViewer1.ActiveViewIndex = 0;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(12, 12);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(19, 13);
+            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.ReporteCliente1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(850, 416);
+            this.crystalReportViewer1.ReportSource = this.CrystalReport11;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1133, 512);
             this.crystalReportViewer1.TabIndex = 1;
+            this.crystalReportViewer1.ToolPanelWidth = 267;
             // 
             // ReporteClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(874, 450);
+            this.ClientSize = new System.Drawing.Size(1165, 554);
             this.Controls.Add(this.crystalReportViewer1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ReporteClientes";
             this.Text = "ReporteClientes";
             this.ResumeLayout(false);
@@ -61,5 +65,6 @@ namespace CapaVista
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private ReporteCliente ReporteCliente1;
+        private CrystalReport1 CrystalReport11;
     }
 }

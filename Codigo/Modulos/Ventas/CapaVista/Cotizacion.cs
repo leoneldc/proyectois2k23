@@ -17,10 +17,38 @@ namespace CapaVista
         Controlador controlador = new Controlador();
         CapaModelo_Ventas.Cpconexion conexion = new CapaModelo_Ventas.Cpconexion();
         int indice = 1;
+        public void actualizarGrid()
+        {
+            string consultaEncabezado = "SELECT * FROM tbl_cotizacion;";
+            OdbcCommand cmdEncabezado = new OdbcCommand(consultaEncabezado, conexion.Conexion());
+            // Crear el adaptador de datos
+            OdbcDataAdapter adapter = new OdbcDataAdapter(cmdEncabezado);
+
+            // Crear el DataSet para almacenar los datos
+            DataSet dataSet = new DataSet();
+
+            // Llenar el DataSet con los datos del adaptador
+            adapter.Fill(dataSet);
+
+            // Asignar el DataSet como origen de datos del DataGridView
+            dataGridView2.DataSource = dataSet.Tables[0];
+
+            // Ajustar la apariencia de las columnas (opcional)
+            dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
         public Cotizacion()
         {
             InitializeComponent();
+            actualizarGrid();
+
             dataGridView1.ColumnCount = 4; // Establece el número de columnas
+
+            dataGridView3.ColumnCount = 4; // Establece el número de columnas
+
+            dataGridView3.Columns[0].Name = "Producto"; // Nombre de la primera columna
+            dataGridView3.Columns[1].Name = "Cantidad"; // Nombre de la segunda columna
+            dataGridView3.Columns[2].Name = "Precio Unitario"; // Nombre de la tercera columna
+            dataGridView3.Columns[3].Name = "Subtotal"; // Nombre de la cuarta columna
 
             dataGridView1.Columns[0].Name = "Producto"; // Nombre de la primera columna
             dataGridView1.Columns[1].Name = "Cantidad"; // Nombre de la segunda columna
@@ -265,11 +293,111 @@ namespace CapaVista
             int idActual = int.Parse(txt_id.Text);
             idActual = idActual + 1;
             txt_id.Text = idActual.ToString();
+            actualizarGrid();
         }
 
         private void navegador1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView2_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verificar si la fila seleccionada es válida
+            if (e.RowIndex >= 0)
+            {
+                // Obtener la fila seleccionada
+                DataGridViewRow filaSeleccionada = dataGridView2.Rows[e.RowIndex];
+
+                // Obtener los valores de las celdas de la fila seleccionada
+                string valorColumna1 = filaSeleccionada.Cells[0].Value.ToString();
+                string valorColumna2 = filaSeleccionada.Cells[1].Value.ToString();
+                string valorColumna3 = filaSeleccionada.Cells[2].Value.ToString();
+                string valorColumna4 = filaSeleccionada.Cells[3].Value.ToString();
+                // Asignar los valores a los TextBox correspondientes
+                txt_id_consulta.Text = valorColumna1;
+                string idAlmacen = "SELECT nombre_almacen FROM `ModuloVentas`.`tbl_almacen` WHERE codigo_almacen = " + valorColumna2 + ";";
+                OdbcCommand cmdAlmacen = new OdbcCommand(idAlmacen, conexion.Conexion());
+                OdbcDataReader readerAlmacen = cmdAlmacen.ExecuteReader();
+                while (readerAlmacen.Read())
+                {
+                    string nombreAlmacen = readerAlmacen.GetString(0);
+                    txt_almacen_consulta.Text = nombreAlmacen;
+                }
+                string idCliente = "SELECT Dpi_clientes FROM `ModuloVentas`.`tbl_clientes` WHERE Pk_idClientes = " + valorColumna3 + ";";
+                OdbcCommand cmdCliente = new OdbcCommand(idCliente, conexion.Conexion());
+                OdbcDataReader readerCliente = cmdCliente.ExecuteReader();
+                while (readerCliente.Read())
+                {
+                    string dpiCliente = readerCliente.GetString(0);
+                    txt_cliente_consulta.Text = dpiCliente;
+                }
+                txt_fecha_consulta.Text = valorColumna4;
+                string idEstado = "SELECT Pk_estado_cotizacion FROM moduloventas.tbl_detalle_cotizacion where Pk_idCotizacion = " + valorColumna1 + ";";
+                OdbcCommand cmdEstado = new OdbcCommand(idEstado, conexion.Conexion());
+                OdbcDataReader readerEstado = cmdEstado.ExecuteReader();
+                while (readerEstado.Read())
+                {
+                    string idEstadoConsulta = readerEstado.GetString(0);
+                    txt_estado_consulta.Text = idEstadoConsulta;
+                }
+                string nombreEstado = "SELECT descripcion_estado_cotizacion FROM moduloventas.tbl_estado_cotizacion where Pk_estado_cotizacion = " + txt_estado_consulta.Text + ";";
+                OdbcCommand cmdEstadoConsulta = new OdbcCommand(nombreEstado, conexion.Conexion());
+                OdbcDataReader readerEstadoConsulta = cmdEstadoConsulta.ExecuteReader();
+                while (readerEstadoConsulta.Read())
+                {
+                    string nombreEstadoConsulta = readerEstadoConsulta.GetString(0);
+                    txt_estado_consulta.Text = nombreEstadoConsulta;
+                }
+
+                dataGridView3.Rows.Clear();
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string idProducto = "SELECT  `a`.`nombre_producto` FROM (`moduloventas`.`tbl_detalle_cotizacion` `b` JOIN `moduloventas`.`tbl_producto` `a` ON ((`a`.`codigo_producto` = `b`.`codigo_producto`)) AND  ((`b`.`Pk_idCotizacion` =" + txt_id_consulta.Text + ")));";
+            List<string> arregloProducto = new List<string>();
+            List<string> arregloCantidad = new List<string>();
+            List<string> arregloPrecio = new List<string>();
+            List<string> arregloTotal = new List<string>();
+
+            OdbcCommand cmdProducto = new OdbcCommand(idProducto, conexion.Conexion());
+            OdbcDataReader readerProducto = cmdProducto.ExecuteReader();
+            int cont = 0;
+            while (readerProducto.Read())
+            {
+                arregloProducto.Add(readerProducto.GetString(0));
+                cont = cont + 1;
+            }
+            string idCantidad = "SELECT  `b`.`Cantidad_detallecotizacion`FROM (`moduloventas`.`tbl_detalle_cotizacion` `b` JOIN `moduloventas`.`tbl_producto` `a` ON ((`a`.`codigo_producto` = `b`.`codigo_producto`)) AND  ((`b`.`Pk_idCotizacion` =" + txt_id_consulta.Text + ")));";
+            OdbcCommand cmdCantidad = new OdbcCommand(idCantidad, conexion.Conexion());
+            OdbcDataReader readerCantidad = cmdCantidad.ExecuteReader();
+
+            while (readerCantidad.Read())
+            {
+                arregloCantidad.Add(readerCantidad.GetString(0));
+            }
+            string idPrecio = "SELECT  `b`.`precio_unitario_producto` FROM (`moduloventas`.`tbl_detalle_cotizacion` `b` JOIN `moduloventas`.`tbl_producto` `a` ON ((`a`.`codigo_producto` = `b`.`codigo_producto`)) AND  ((`b`.`Pk_idCotizacion` = " + txt_id_consulta.Text + ")));";
+            OdbcCommand cmdPrecio = new OdbcCommand(idPrecio, conexion.Conexion());
+            OdbcDataReader readerPrecio = cmdPrecio.ExecuteReader();
+
+            while (readerPrecio.Read())
+            {
+                arregloPrecio.Add(readerPrecio.GetString(0));
+            }
+            string idTotal = "SELECT  `b`.`Total_detalle_detallecotizacion` FROM (`moduloventas`.`tbl_detalle_cotizacion` `b` JOIN `moduloventas`.`tbl_producto` `a` ON ((`a`.`codigo_producto` = `b`.`codigo_producto`)) AND  ((`b`.`Pk_idCotizacion` = " + txt_id_consulta.Text + ")));";
+            OdbcCommand cmdTotal = new OdbcCommand(idTotal, conexion.Conexion());
+            OdbcDataReader readerTotal = cmdTotal.ExecuteReader();
+
+            while (readerTotal.Read())
+            {
+                arregloTotal.Add(readerTotal.GetString(0));
+            }
+            for (int i = 0; i < cont; i++)
+            {
+                dataGridView3.Rows.Add(arregloProducto[i], arregloCantidad[i], arregloPrecio[i], arregloTotal[i]);
+            }
         }
     }
 }

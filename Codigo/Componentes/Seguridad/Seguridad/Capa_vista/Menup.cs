@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaVista;
 using Seguridad_Controlador;
 
 //Comentado por George Mayén 25/02/2023
@@ -46,9 +45,9 @@ namespace Vista_Seguridad
 
         public void btnVentas_Click(object sender, EventArgs e)
         {
-            CapaVista.Mdi ventas = new CapaVista.Mdi();
+            /*CapaVista.Mdi ventas = new CapaVista.Mdi();
             ventas.Show();
-            cn.setBtitacora("2000", "Ingreso Ventas");
+            cn.setBtitacora("2000", "Ingreso Ventas");*/
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btnLogout_Click_1(object sender, EventArgs e)
