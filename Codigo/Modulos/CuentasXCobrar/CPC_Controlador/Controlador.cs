@@ -353,8 +353,8 @@ namespace CPC_Controlador
         }
 
         public void Modificarsaldosclientes(string saldo1, string saldo2, string saldo3, string saldo4, string id_cliente)
-        {
-            sentencias.modificarsaldoscliente(saldo1, saldo2, saldo3, saldo4, id_cliente);
+        {     
+            sentencias.modificarsaldoscliente(saldo1, saldo2, saldo3, saldo4, id_cliente);    
         }
 
         // Final Estado Cuenta ------------------------------------------------------------------------------------------------------------------------------------
@@ -392,7 +392,5 @@ namespace CPC_Controlador
         }
 
         // Fin Venta ----------------------------------------------------------------------------------------------------------------------------------------------
-
-
     }
 }
